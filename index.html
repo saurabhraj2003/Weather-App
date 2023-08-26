@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="app-main">
+        <div class="searchInputBox">
+            <input type="text" id="input-box" class="input-box" placeholder="Enter city name" autocomplete="off">
+            <button id="search-btn" class="search-btn"><img src="img/search.png" width="30%"></button>
+        </div>
+
+        <div class="weather-body">
+            <div class="location-details">
+                <div class="city" id="city">Guwahati, IN</div>
+                <div class="date" id="date">8 June (Thursday), 2023</div>
+            </div>
+
+            <div class="weather-status">
+                <div class="temp" id="temp">29°C</div>
+                <div class="feelslike">
+                    <p>Feels Like: </p>
+                    <div class="ftemp" id="ftemp">29°C</div>
+                </div>
+                <div class="min-max" id="min-max">25°C (min) / 34°C (max)</div>
+                <div class="weather" id="weather">Clear</div>
+                <img id="weather-icon" src="img/clear.png" alt="no icon">
+
+                <div class="details">
+                    <div class="col">
+                        <p>Humidity</p>
+
+                        <img id="icon" src="img/humidity.png" alt="">
+                        <div id="humidity">50%</div>
+                    </div>
+                    <div class="col">
+                        <p>Wind Speed</p>
+
+                        <img id="icon" src="img/wind.png" alt="">
+                        <div id="wind">5 km/h</div>
+
+                    </div>
+                </div>
+                <!-- <div class="more details">
+                    <div class="col">
+                        <p>Pressure</p>
+
+                        <img id="icon" src="img/pressure.png" alt="">
+                        <div id="pressure">50%</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
